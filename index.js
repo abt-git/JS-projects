@@ -1,10 +1,31 @@
-function setInt() {
+const handSec = document.querySelector(".second-hand");
+const handMin = document.querySelector(".min-hand");
+const handHour = document.querySelector(".hour-hand");
+
+function setIntSec() {
     const now = new Date();
-    console.log(now.getSeconds());
-    alert(`Date: ${now}`)
-}
+    
+    const sec = now.getSeconds();
+    const degSec = ((sec/60)*360 + 90);
+    handSec.style.transform = `rotate(${degSec}deg)`;
+    console.log(sec);
 
-setInterval(setInt, 1000);
+    const min = now.getMinutes();
+    const degMin = ((min/60)*360 + 90);
+    handMin.style.transform = `rotate(${degMin}deg)`;
 
-// const handSec = document.querySelector(".hand second-hand");
-// handSec.addEventListener('transition', setInt );
+    const hour = now.getHours();
+    const degHour = ((hour/12)*360 + 90);
+    handHour.style.transform = `rotate(${degHour}deg)`;
+
+    }
+
+setInterval(setIntSec, 1000);
+
+setInterval();
+    
+
+
+
+
+    

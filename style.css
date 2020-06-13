@@ -34,12 +34,13 @@ body {
 
 .hand {
   width: 50%;
-  height: 12px;
+  height: 5px;
   background: white;
   position: absolute;
   top: 50%;
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
