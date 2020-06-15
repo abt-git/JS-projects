@@ -44,3 +44,15 @@ body {
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.dateText {
+  width: 100px;
+  height: 20px;
+  border: 5px solid black;
+  border-radius: 0%;
+  margin: 50px auto;
+  /* position: absolute; */
+  padding: 50px; 
+  display: flex;
+  text-align: center;
+}
+
